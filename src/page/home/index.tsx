@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
+import "./index.less";
 import { updateMap, updateStyles } from "./home";
-import "./index.css";
 
 export default function Home() {
   useEffect(() => {
@@ -20,11 +20,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       <div className="header">HEADER</div>
       <div className="playground">
         <div className="animation-container">
-          <div className="list">
+                    <div className="list">
             <div data-order="0" className="list-item"></div>
             <div data-order="1" className="list-item"></div>
             <div data-order="2" className="list-item"></div>
